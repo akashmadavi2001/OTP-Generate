@@ -60,7 +60,7 @@ button:hover {
 
 @keyframes animate {
     0% {
-        top: -20%;
+        top: -20px;
         transform: scale(0.2);
     }
 
@@ -75,7 +75,7 @@ button:hover {
     }
 
     100% {
-        top: -20%;
+        top: -20px;
         transform: scale(0.2);
     }
 }
