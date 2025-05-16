@@ -1,11 +1,12 @@
-let display = document.querySelector('h5');
-let btn = document.querySelector('button');
-let img = document.querySelector('img');
-let notify = document.querySelector('.notification');
+const display = document.querySelector('h5');
+const btn = document.querySelector('button');
+const img = document.querySelector('img');
+const notify = document.querySelector('.notification');
 
 btn.addEventListener('click', () => {
     let No = '0123456789';
     let NewNo = '';
+    btn.style = 'pointer-events: none';
 
     for (let i = 0; i < 4; i++) {
         let randomNo = Math.floor(Math.random() * No.length);
@@ -16,6 +17,7 @@ btn.addEventListener('click', () => {
     notify.classList.add('active');
     setTimeout(() => {
         notify.classList.remove('active');
+        btn.style = 'pointer-events:visible';
     }, 5000);
 
     img.src = 'copy.png';
