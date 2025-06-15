@@ -11,7 +11,8 @@ btn.addEventListener('click', () => {
     for (let i = 0; i < 4; i++) {
         let randomNo = Math.floor(Math.random() * No.length);
         NewNo += No[randomNo];
-    }
+    };
+    
     display.innerHTML = 'Your OTP is ' + NewNo;
 
     notify.classList.add('active');
