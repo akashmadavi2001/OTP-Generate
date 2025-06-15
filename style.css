@@ -51,6 +51,11 @@ button:hover {
     align-items: center;
     gap: 20px;
 }
+.notification img {
+    width: 20px;
+    right: 25px;
+    top: 30px;
+}
 
 .active {
     top: -20%;
@@ -78,10 +83,4 @@ button:hover {
         top: -20px;
         transform: scale(0.2);
     }
-}
-
-img {
-    width: 20px;
-    right: 25px;
-    top: 30px;
 }
