@@ -3,7 +3,7 @@ const btn = document.querySelector('button');
 const img = document.querySelector('img');
 const notify = document.querySelector('.notification');
 
-btn.addEventListener('click', () => {
+button = () => {
     let No = '0123456789';
     let NewNo = '';
     btn.style = 'pointer-events: none';
@@ -11,8 +11,7 @@ btn.addEventListener('click', () => {
     for (let i = 0; i < 4; i++) {
         let randomNo = Math.floor(Math.random() * No.length);
         NewNo += No[randomNo];
-    };
-    
+    }
     display.innerHTML = 'Your OTP is ' + NewNo;
 
     notify.classList.add('active');
@@ -25,5 +24,7 @@ btn.addEventListener('click', () => {
     img.addEventListener("click", () => {
         navigator.clipboard.writeText(NewNo);
         img.src = 'copied.png';
-    });
-});
+    })
+};
+
+btn.addEventListener('click', button);
