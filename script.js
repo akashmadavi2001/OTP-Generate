@@ -15,6 +15,7 @@ button = () => {
     display.innerHTML = 'Your OTP is ' + NewNo;
 
     notify.classList.add('active');
+    
     setTimeout(() => {
         notify.classList.remove('active');
         btn.style = 'pointer-events:visible';
@@ -26,5 +27,6 @@ button = () => {
         img.src = 'copied.png';
     })
 };
+
 
 btn.addEventListener('click', button);
